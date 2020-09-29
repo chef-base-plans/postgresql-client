@@ -52,7 +52,7 @@ control 'core-plans-postgresql-client-works' do
   # over-ride the defaults below with (command_suffix:, io:, etc)
   subset.each do |binary_name, value|
     # set default values if each binary doesn't define an over-ride
-    command_suffix = value.has_key?(:command_suffix) ? "#{value[:command_suffix]} 2>&1" : "--version 2>&1"
+    command_suffix = value.has_key?(:command_suffix) ? "#{value[:command_suffix]}" : "--version"
     command_output_pattern = value[:command_output_pattern] || /#{binary_name}\s+\(PostgreSQL\)\s+#{plan_pkg_version}/i
   
     # verify output

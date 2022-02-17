@@ -1,5 +1,5 @@
 pkg_name=postgresql-client
-pkg_version=9.6.21
+pkg_version=9.6.24
 pkg_origin=core
 pkg_maintainer="The Habitat Maintainers <humans@habitat.sh>"
 pkg_description="PostgreSQL is a powerful, open source object-relational database system."
@@ -7,7 +7,7 @@ pkg_upstream_url="https://www.postgresql.org/"
 pkg_license=('PostgreSQL')
 pkg_dirname="postgresql-${pkg_version}"
 pkg_source="https://ftp.postgresql.org/pub/source/v${pkg_version}/${pkg_dirname}.tar.bz2"
-pkg_shasum="930feaef28885c97ec40c26ab6221903751eeb625de92b22602706d7d47d1634"
+pkg_shasum="aeb7a196be3ebed1a7476ef565f39722187c108dd47da7489be9c4fcae982ace"
 
 pkg_deps=(
   core/bash
